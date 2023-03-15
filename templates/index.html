@@ -2,26 +2,29 @@
     <head>
         <title>Meu primeiro site :D</title>
     </head>
-    <body>
-        Aprovado ou Reprovado
+    <div style="background-color: black;">
 
-        <div>
-            <form method="get">
-                Primeira Nota:
-                <input type="text" name="primeira">
-                <br>
-                Segunda Nota:
-                <input type="text" name="segunda">
-                <br>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-
-        {% if resultado %}
-        <div>
-            {{resultado}} com média {{media}}!!!
-        </div>
-        {% endif %}
-
-    </body>
+        <body style="color: aqua;">
+            Aprovado ou Reprovado
+            
+            <div>
+                <form method="get">
+                    Primeira Nota:
+                    <input type="text" name="primeira">
+                    <br>
+                    Segunda Nota:
+                    <input type="text" name="segunda">
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            
+            {% if resultado %}
+            <div>
+                {{resultado}} com média {{media}}!!!
+            </div>
+            {% endif %}
+            
+        </body>
+    </div>
 </html>
